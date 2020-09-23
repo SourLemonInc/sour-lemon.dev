@@ -2,7 +2,7 @@
   "name": "sour-lemon.dev",
   "private": true,
   "description": "sour-lemon.dev",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Yoshiyuki Hisamatsu <hisasann25@gmail.com>",
   "scripts": {
     "build": "gatsby build",

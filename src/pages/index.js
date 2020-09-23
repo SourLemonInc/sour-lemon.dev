@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { LOGO_MAX_WIDTH} from '../constants/'
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +14,7 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     */}
-    <div style={{ maxWidth: `1000px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `${LOGO_MAX_WIDTH}px`, marginBottom: `1.45rem`}}>
       <Image />
     </div>
     {/*

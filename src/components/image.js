@@ -19,7 +19,7 @@ const Image = () => {
       placeholderImage: file(relativePath: { eq: "logo/logo.png" }) {
       #placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -27,7 +27,15 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <div style={{
+      }}>
+      <Img fluid={data.placeholderImage.childImageSharp.fluid} style={{
+        width: '100%',
+        margin: '0 auto'
+      }}/>
+    </div>
+  )
 }
 
 export default Image
