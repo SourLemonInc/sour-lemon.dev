@@ -30,6 +30,10 @@ const Image = () => {
   return (
     <div style={{}}>
       <Img
+        // https://www.gatsbyjs.com/plugins/gatsby-image/
+        // gatsby-image 特有のフェードイン効果
+        // default: true
+        fadeIn={false}
         fluid={data.placeholderImage.childImageSharp.fluid}
         style={{
           width: '100%',
