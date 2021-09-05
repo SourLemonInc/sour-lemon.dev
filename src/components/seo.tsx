@@ -23,7 +23,7 @@ function Seo({ description, lang, meta, title, image }) {
           }
         }
       }
-    `
+    `,
   )
 
   const siteUrl = site.siteMetadata.siteUrl
