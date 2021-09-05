@@ -13,7 +13,7 @@ import { LOGO_MAX_WIDTH } from '../constants/'
 import Header from './header'
 import './layout.css'
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: any }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
