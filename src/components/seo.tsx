@@ -79,8 +79,8 @@ function Seo({ description, lang, meta, title, image }) {
           content: metaDescription,
         },
         {
-          name: `twitter:card`,
-          content: `summary_large_image`,
+          name: `twitter:image`,
+          content: defaultImage,
         },
       ].concat(meta)}
     />
