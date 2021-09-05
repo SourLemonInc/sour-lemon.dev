@@ -3,12 +3,18 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { LOGO_MAX_WIDTH } from "../constants/"
+
+// OGP 画像
+const ogImage = require("../images/logo/logo-default.png")
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo
+      title=""
+      image={ogImage}
+    />
     {/*
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
