@@ -1,21 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import Seo from "../components/seo"
-import { LOGO_MAX_WIDTH } from "../constants/"
+import Layout from '../components/layout'
+import Image from '../components/image'
+import Seo from '../components/seo'
+import { LOGO_MAX_WIDTH, LANG } from '../constants/'
 
 // OGP 画像
 // @ts-ignore
-import ogImage from "../images/logo/logo-default.png"
+import ogImage from '../images/logo/logo-default.png'
 
 const IndexPage = () => (
   <Layout>
-    <Seo
-      title=""
-      image={ogImage}
-    />
+    <Seo title="" image={ogImage} lang={LANG} />
     {/*
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
