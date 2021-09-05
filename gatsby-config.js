@@ -1,12 +1,13 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://sour-lemon.dev`,
+    title: `Sour & Lemon Inc.🍋`,
+    description: `Take each other's hands in joy.`,
+    author: `@SourLemonInc`,
+  },
   // via https://github.com/gatsbyjs/gatsby/discussions/29308
   flags: {
     DEV_SSR: false,
-  },
-  siteMetadata: {
-    title: `🥤 Sour & Lemon Inc. 🍋`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@SourLemonInc`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
