@@ -32,6 +32,8 @@ function Seo({ description, lang, meta, title, image }) {
   const defaultTitle = site.siteMetadata?.title
   const calculateTitle = title ? `${title} | ${defaultTitle}` : defaultTitle
 
+  // https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial/
+  // Note: twitter の ogp をちゃんとしたいならこちらのリンクの内容をやったほうがいいかもしれない
   return (
     <Helmet
       htmlAttributes={{
