@@ -1,7 +1,7 @@
 module.exports = {
   // via https://github.com/gatsbyjs/gatsby/discussions/29308
   flags: {
-    DEV_SSR: false
+    DEV_SSR: false,
   },
   siteMetadata: {
     title: `🥤 Sour & Lemon Inc. 🍋`,

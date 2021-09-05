@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { LOGO_MAX_WIDTH} from '../constants/'
+import { LOGO_MAX_WIDTH } from "../constants/"
 
 import Header from "./header"
 import "./layout.css"
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer
           style={{
-            textAlign: 'center'
+            textAlign: "center",
           }}
         >
           © Sour & Lemon Inc. {new Date().getFullYear()}
