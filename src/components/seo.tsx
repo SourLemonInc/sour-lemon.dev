@@ -28,6 +28,7 @@ function Seo({ description, lang, meta, title, image }) {
 
   const siteUrl = site.siteMetadata.siteUrl;
   const defaultImage = `${siteUrl}${image}`;
+  console.log(1, defaultImage)
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const calculateTitle = title ? `${title} | ${defaultTitle}` : defaultTitle

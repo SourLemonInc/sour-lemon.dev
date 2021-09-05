@@ -7,7 +7,8 @@ import Seo from "../components/seo"
 import { LOGO_MAX_WIDTH } from "../constants/"
 
 // OGP 画像
-const ogImage = require("../images/logo/logo-default.png")
+// @ts-ignore
+import ogImage from "../images/logo/logo-default.png"
 
 const IndexPage = () => (
   <Layout>
