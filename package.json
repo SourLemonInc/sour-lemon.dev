@@ -17,6 +17,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.1",
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
     "gatsby": "^3.13.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-manifest": "^3.13.0",
