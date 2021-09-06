@@ -24,7 +24,7 @@ export default function companyInfo() {
         COMPANY PROFILE
       </chakra.h1>
 
-      <Table variant="simple" style={{ width: '963px' }}>
+      <Table variant="simple">
         <Tbody>
           <Tr>
             <Td>会社名</Td>

@@ -62,7 +62,7 @@ export default function SocialProfileSimple() {
         >
           Sour & Lemon, Inc. CTO
           <br />
-          Software Engineer and EM at @CureApp_Inc.
+          EM at @CureApp_Inc.
           <br />
           ex- @teamlab_news.
           <br />

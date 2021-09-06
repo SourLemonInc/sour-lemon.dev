@@ -1,17 +1,13 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import {
   Box,
   chakra,
-  Container,
   Center,
-  Heading,
   SimpleGrid,
 } from '@chakra-ui/react';
 
 import Layout from '../components/layout';
-import Logo from '../components/logo';
 import Seo from '../components/seo';
 import WithSubnavigation from '../components/withSubnavigation';
 import CallToActionWithIllustration from '../components/callToActionWithIllustration';
@@ -20,7 +16,7 @@ import SocialProfileWithImageHisasann from '../components/socialProfileWithImage
 import SocialProfileWithImageMonishim from '../components/socialProfileWithImageMonishim';
 import CompanyInfo from '../components/companyInfo';
 
-import { LOGO_MAX_WIDTH, LANG } from '../constants/';
+import { LANG } from '../constants/';
 
 // OGP 画像
 // @ts-ignore
@@ -30,7 +26,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="" image={ogImage} lang={LANG} />
 
-    <WithSubnavigation />
+    {/* <WithSubnavigation /> */}
 
     <Center>
       <CallToActionWithIllustration />
