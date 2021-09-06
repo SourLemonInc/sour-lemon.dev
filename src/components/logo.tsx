@@ -1,6 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { Box } from "@chakra-ui/react"
+import { Image } from "@chakra-ui/react"
+// import Img from 'gatsby-image'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,7 +15,7 @@ import Img from 'gatsby-image'
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "logo/logo.png" }) {
@@ -28,20 +30,10 @@ const Image = () => {
   `)
 
   return (
-    <div style={{}}>
-      <Img
-        // https://www.gatsbyjs.com/plugins/gatsby-image/
-        // gatsby-image 特有のフェードイン効果
-        // default: true
-        fadeIn={false}
-        fluid={data.placeholderImage.childImageSharp.fluid}
-        style={{
-          width: '100%',
-          margin: '0 auto',
-        }}
-      />
-    </div>
+    <Box>
+      <Image src={data.placeholderImage.childImageSharp.fluid.src} />
+    </Box>
   )
 }
 
-export default Image
+export default Logo

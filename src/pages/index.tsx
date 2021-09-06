@@ -1,9 +1,21 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import {
+  Box,
+  Container,
+  Center,
+  SimpleGrid
+} from "@chakra-ui/react"
+
 import Layout from '../components/layout'
-import Image from '../components/image'
+import Logo from '../components/logo'
 import Seo from '../components/seo'
+import WithSubnavigation from '../components/withSubnavigation'
+import CallToActionWithIllustration from '../components/callToActionWithIllustration'
+import LargeWithNewsletter from '../components/largeWithNewsletter'
+import SocialProfileWithImageHisasann from '../components/socialProfileWithImageHisasann'
+import SocialProfileWithImageMonishim from '../components/socialProfileWithImageMonishim'
 import { LOGO_MAX_WIDTH, LANG } from '../constants/'
 
 // OGP 画像
@@ -18,9 +30,19 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     */}
-    <div style={{ maxWidth: `${LOGO_MAX_WIDTH}px`, marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
+
+
+    <WithSubnavigation />
+    <Center>
+      <CallToActionWithIllustration />
+    </Center>
+    <SimpleGrid columns={2} spacing={0}>
+      <Box><SocialProfileWithImageHisasann /></Box>
+      <Box><SocialProfileWithImageMonishim /></Box>
+    </SimpleGrid>
+    <Center>
+      <LargeWithNewsletter />
+    </Center>
     {/*
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>

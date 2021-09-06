@@ -30,18 +30,12 @@ const Layout = ({ children }: { children: any }) => {
       <div
         style={{
           margin: '0 auto',
-          maxWidth: LOGO_MAX_WIDTH,
-          padding: '0 1.0875rem 1.45rem',
+          // maxWidth: LOGO_MAX_WIDTH,
+          // padding: '0 1.0875rem 1.45rem',
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          © Sour & Lemon Inc. {new Date().getFullYear()}
-        </footer>
+        <footer style={{ textAlign: 'center', }} ></footer>
       </div>
     </>
   )
