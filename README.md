@@ -4,7 +4,17 @@
 
 ## Our main color
 
+### イエロー
+
 `#E0EC55`
+
+### グリーン
+
+`#85CE85`
+
+### ブルー
+
+`#6B96D5`
 
 ## Basing gatsby template gatsby-starter-default
 
