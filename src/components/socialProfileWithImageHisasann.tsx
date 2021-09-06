@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   Heading,
@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 
 // @ts-ignore
-import socialImage from '../images/social/hisasann/hisasann.jpg'
+import socialImage from '../images/social/hisasann/hisasann.jpg';
 
 export default function SocialProfileSimple() {
   return (
@@ -26,10 +26,11 @@ export default function SocialProfileSimple() {
         boxShadow={'2xl'}
         rounded={'lg'}
         p={6}
-        textAlign={'center'}>
+        textAlign={'center'}
+      >
         <Avatar
           size={'xl'}
-          src={ socialImage }
+          src={socialImage}
           alt={'Avatar Alt'}
           mb={4}
           pos={'relative'}
@@ -57,10 +58,14 @@ export default function SocialProfileSimple() {
         <Text
           textAlign={'center'}
           color={useColorModeValue('gray.700', 'gray.400')}
-          px={3}>
-          Sour & Lemon, Inc. CTO<br />
-          Software Engineer and EM at @CureApp_Inc.<br />
-          ex- @teamlab_news.<br />
+          px={3}
+        >
+          Sour & Lemon, Inc. CTO
+          <br />
+          Software Engineer and EM at @CureApp_Inc.
+          <br />
+          ex- @teamlab_news.
+          <br />
         </Text>
 
         <Stack mt={8} direction={'row'} spacing={4}>
@@ -70,8 +75,11 @@ export default function SocialProfileSimple() {
             rounded={'full'}
             _focus={{
               bg: 'gray.200',
-            }}>
-            <Link href="https://www.instagram.com/hisasann/" isExternal>Instagram</Link>
+            }}
+          >
+            <Link href="https://www.instagram.com/hisasann/" isExternal>
+              Instagram
+            </Link>
           </Button>
           <Button
             flex={1}
@@ -87,8 +95,11 @@ export default function SocialProfileSimple() {
             }}
             _focus={{
               bg: 'blue.500',
-            }}>
-            <Link href="https://twitter.com/hisasann" isExternal>Twitter</Link>
+            }}
+          >
+            <Link href="https://twitter.com/hisasann" isExternal>
+              Twitter
+            </Link>
           </Button>
         </Stack>
       </Box>

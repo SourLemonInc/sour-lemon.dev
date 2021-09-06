@@ -22,8 +22,9 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   ignorePatterns: ['public'],
   rules: {
+    'react/no-unescaped-entities': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['off'],
     '@typescript-eslint/ban-ts-comment': 'off',
   },
-}
+};

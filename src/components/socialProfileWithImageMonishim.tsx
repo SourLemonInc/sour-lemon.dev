@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   Heading,
@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 
 // @ts-ignore
-import socialImage from '../images/social/monishim/monishim.jpg'
+import socialImage from '../images/social/monishim/monishim.jpg';
 
 export default function SocialProfileSimple() {
   return (
@@ -26,7 +26,8 @@ export default function SocialProfileSimple() {
         boxShadow={'2xl'}
         rounded={'lg'}
         p={6}
-        textAlign={'center'}>
+        textAlign={'center'}
+      >
         <Avatar
           size={'xl'}
           src={socialImage}
@@ -54,7 +55,8 @@ export default function SocialProfileSimple() {
         <Text
           textAlign={'center'}
           color={useColorModeValue('gray.700', 'gray.400')}
-          px={3}>
+          px={3}
+        >
           Sour & Lemon, inc. CEO <br />
           Maneger at Consulting firm <br />
           ex- @teamlab_news.
@@ -67,8 +69,11 @@ export default function SocialProfileSimple() {
             rounded={'full'}
             _focus={{
               bg: 'gray.200',
-            }}>
-            <Link href="https://www.instagram.com/monishim/" isExternal>Instagram</Link>
+            }}
+          >
+            <Link href="https://www.instagram.com/monishim/" isExternal>
+              Instagram
+            </Link>
           </Button>
           <Button
             flex={1}
@@ -84,8 +89,11 @@ export default function SocialProfileSimple() {
             }}
             _focus={{
               bg: 'blue.500',
-            }}>
-            <Link href="https://twitter.com/monishim" isExternal>Twitter</Link>
+            }}
+          >
+            <Link href="https://twitter.com/monishim" isExternal>
+              Twitter
+            </Link>
           </Button>
         </Stack>
       </Box>

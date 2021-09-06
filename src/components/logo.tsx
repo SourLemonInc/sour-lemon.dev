@@ -1,7 +1,7 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import { Box } from "@chakra-ui/react"
-import { Image } from "@chakra-ui/react"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Box } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 // import Img from 'gatsby-image'
 
 /*
@@ -27,13 +27,13 @@ const Logo = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <Box>
       <Image src={data.placeholderImage.childImageSharp.fluid.src} />
     </Box>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

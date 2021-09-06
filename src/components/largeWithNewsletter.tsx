@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Box,
   chakra,
@@ -18,16 +18,10 @@ import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 
 // @ts-ignore
-import logoImage from '../images/logo/icon-256x256.png'
+import logoImage from '../images/logo/icon-256x256.png';
 
 const Logo = (props: any) => {
-  return (
-    <Image
-      src={logoImage}
-      boxSize="40px"
-      objectFit="cover"
-    />
-  );
+  return <Image src={logoImage} boxSize="40px" objectFit="cover" />;
 };
 
 const SocialButton = ({
@@ -54,7 +48,8 @@ const SocialButton = ({
       transition={'background 0.3s ease'}
       _hover={{
         bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-      }}>
+      }}
+    >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </chakra.button>
@@ -73,11 +68,14 @@ export default function LargeWithNewsletter() {
   return (
     <Box
       // bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      color={useColorModeValue('gray.700', 'gray.200')}
+      style={{ marginTop: '50px' }}
+    >
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
-          spacing={8}>
+          spacing={8}
+        >
           <Stack spacing={6}>
             <Box>
               <Logo />
@@ -86,22 +84,45 @@ export default function LargeWithNewsletter() {
               © Sour & Lemon Inc. {new Date().getFullYear()} All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={'https://twitter.com/sourlemoninc'}>
+              <SocialButton
+                label={'Twitter'}
+                href={'https://twitter.com/sourlemoninc'}
+              >
                 <FaTwitter />
               </SocialButton>
-              <SocialButton label={'YouTube'} href={'https://www.youtube.com/channel/UCcB8jQpBT_r9T1XUkc9WgrA'}>
+              <SocialButton
+                label={'YouTube'}
+                href={
+                  'https://www.youtube.com/channel/UCcB8jQpBT_r9T1XUkc9WgrA'
+                }
+              >
                 <FaYoutube />
               </SocialButton>
-              <SocialButton label={'Instagram'} href={'https://www.instagram.com/sour.lemon.inc/'}>
+              <SocialButton
+                label={'Instagram'}
+                href={'https://www.instagram.com/sour.lemon.inc/'}
+              >
                 <FaInstagram />
               </SocialButton>
             </Stack>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
-            <Link href={'https://docs.google.com/forms/d/1YOTuc6H0dknQjoKRghL0j4Axo8c4lkuRYJmMPF21nEI/edit'}>About us</Link>
+            <Link
+              href={
+                'https://docs.google.com/forms/d/1YOTuc6H0dknQjoKRghL0j4Axo8c4lkuRYJmMPF21nEI/edit'
+              }
+            >
+              About us
+            </Link>
             <Link href={'#'}>Blog</Link>
-            <Link href={'https://docs.google.com/forms/d/1YOTuc6H0dknQjoKRghL0j4Axo8c4lkuRYJmMPF21nEI/edit'}>Contact us</Link>
+            <Link
+              href={
+                'https://docs.google.com/forms/d/1YOTuc6H0dknQjoKRghL0j4Axo8c4lkuRYJmMPF21nEI/edit'
+              }
+            >
+              Contact us
+            </Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Support</ListHeader>

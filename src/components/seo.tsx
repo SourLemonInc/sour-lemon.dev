@@ -5,18 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 type SeoArgType = {
-  description?: string
-  lang?: string
-  meta?: any
-  title?: string
-  image?: any
-}
+  description?: string;
+  lang?: string;
+  meta?: any;
+  title?: string;
+  image?: any;
+};
 
 function Seo({ description, lang, meta, title, image }: SeoArgType) {
   const { site } = useStaticQuery(
@@ -32,13 +32,13 @@ function Seo({ description, lang, meta, title, image }: SeoArgType) {
         }
       }
     `,
-  )
+  );
 
-  const siteUrl = site.siteMetadata.siteUrl
-  const defaultImage = `${siteUrl}${image}`
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
-  const calculateTitle = title ? `${title} | ${defaultTitle}` : defaultTitle
+  const siteUrl = site.siteMetadata.siteUrl;
+  const defaultImage = `${siteUrl}${image}`;
+  const metaDescription = description || site.siteMetadata.description;
+  const defaultTitle = site.siteMetadata?.title;
+  const calculateTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
 
   // https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial/
   // Note: twitter の ogp をちゃんとしたいならこちらのリンクの内容をやったほうがいいかもしれない
@@ -94,20 +94,20 @@ function Seo({ description, lang, meta, title, image }: SeoArgType) {
         },
       ].concat(meta)}
     />
-  )
+  );
 }
 
 Seo.defaultProps = {
   lang: 'en',
   meta: [],
   description: '',
-}
+};
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default Seo
+export default Seo;
