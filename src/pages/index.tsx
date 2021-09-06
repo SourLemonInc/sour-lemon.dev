@@ -18,7 +18,7 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     */}
-    <div style={{ maxWidth: `${LOGO_MAX_WIDTH}px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `${LOGO_MAX_WIDTH}px`, marginBottom: '1.45rem' }}>
       <Image />
     </div>
     {/*

@@ -11,11 +11,11 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 type SeoArgType = {
-  description?: string;
-  lang?: string;
-  meta?: any;
-  title?: string;
-  image?: any;
+  description?: string
+  lang?: string
+  meta?: any
+  title?: string
+  image?: any
 }
 
 function Seo({ description, lang, meta, title, image }: SeoArgType) {
@@ -53,43 +53,43 @@ function Seo({ description, lang, meta, title, image }: SeoArgType) {
       // titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `description`,
+          name: 'description',
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          property: 'og:title',
           content: calculateTitle,
         },
         {
-          property: `og:description`,
+          property: 'og:description',
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: 'og:type',
+          content: 'website',
         },
         {
-          property: `og:image`,
+          property: 'og:image',
           content: defaultImage,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          name: 'twitter:card',
+          content: 'summary',
         },
         {
-          name: `twitter:creator`,
+          name: 'twitter:creator',
           content: site.siteMetadata.author,
         },
         {
-          name: `twitter:title`,
+          name: 'twitter:title',
           content: calculateTitle,
         },
         {
-          name: `twitter:description`,
+          name: 'twitter:description',
           content: metaDescription,
         },
         {
-          name: `twitter:image`,
+          name: 'twitter:image',
           content: defaultImage,
         },
       ].concat(meta)}
@@ -98,9 +98,9 @@ function Seo({ description, lang, meta, title, image }: SeoArgType) {
 }
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: 'en',
   meta: [],
-  description: ``,
+  description: '',
 }
 
 Seo.propTypes = {

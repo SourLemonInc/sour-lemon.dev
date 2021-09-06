@@ -5,23 +5,23 @@ import React from 'react'
 const Header = ({ siteTitle }: { siteTitle: string }) => (
   <header
     style={{
-      background: `#E0EC55`,
-      marginBottom: `1.45rem`,
+      background: '#E0EC55',
+      marginBottom: '1.45rem',
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
+        margin: '0 auto',
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: '1.45rem 1.0875rem',
       }}
     >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `#639AD9`,
-            textDecoration: `none`,
+            color: '#639AD9',
+            textDecoration: 'none',
           }}
         >
           {siteTitle}
@@ -36,7 +36,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: '',
 }
 
 export default Header
