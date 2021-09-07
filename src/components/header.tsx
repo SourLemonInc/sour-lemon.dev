@@ -1,9 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Center, Flex, Image } from '@chakra-ui/react';
-
+import {
+  Center,
+  Container,
+  Flex,
+  Image,
+  IconButton,
+  useColorMode,
+} from '@chakra-ui/react';
+import { IoMoon, IoSunny } from 'react-icons/io5';
 import { Link } from 'gatsby';
+
+import { MAIN_YELLOW_COLOR, MAIN_BLUE_COLOR } from '../constants/';
 
 // @ts-ignore
 import logoImage from '../images/logo/icon-256x256.png';
@@ -12,41 +21,59 @@ const Logo = () => {
   return <Image src={logoImage} boxSize="40px" objectFit="cover" />;
 };
 
-const Header = ({ siteTitle }: { siteTitle: string }) => (
-  <header
-    style={{
-      // background: '#E0EC55',
-      borderBottom: '1px solid #E0EC55',
-    }}
-  >
-    <div
+const Header = ({ siteTitle }: { siteTitle: string }) => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
+  return (
+    <header
       style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.0rem 1.0rem',
+        // borderBottom: `1px solid ${MAIN_YELLOW_COLOR}`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: '#639AD9',
-            textDecoration: 'none',
-          }}
+      <Container as={Flex} maxW={'7xl'} align={'center'}
+        style={{height: '50px'}}
+      >
+        <Flex>
+          <Link
+            to="/"
+            style={{
+              color: `${MAIN_BLUE_COLOR}`,
+              textDecoration: 'none',
+            }}
+          >
+            <Flex>
+              <Center w="40px">
+                <Logo />
+              </Center>
+              <Center w="160px">{siteTitle}</Center>
+            </Flex>
+          </Link>
+        </Flex>
+
+        <Flex
+          justify={'flex-end'}
+          spacing={{ base: 6, md: 8 }}
+          flex={{ base: 1, md: 'auto' }}
         >
-          <Flex>
-            <Center w="40px">
-              <Logo />
-            </Center>
-            <Center w="160px">
-              {siteTitle}
-            </Center>
-          </Flex>
-        </Link>
-      </h1>
-    </div>
-  </header>
-);
+          <IconButton
+            alignItems={'center'}
+            size={'sm'}
+            variant={'ghost'}
+            aria-label={'Toggle Color Mode'}
+            onClick={toggleColorMode}
+            icon={
+              colorMode == 'light' ? (
+                <IoMoon size={18} />
+              ) : (
+                <IoSunny size={18} />
+              )
+            }
+          />
+        </Flex>
+      </Container>
+    </header>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
