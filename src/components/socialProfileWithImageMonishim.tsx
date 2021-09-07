@@ -13,6 +13,8 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
+import { INSTAGRAM_COLOR } from '../constants/'
+
 // @ts-ignore
 import socialImage from '../images/social/monishim/monishim.jpg';
 
@@ -67,8 +69,12 @@ export default function SocialProfileSimple() {
             flex={1}
             fontSize={'sm'}
             rounded={'full'}
+            bg={`${INSTAGRAM_COLOR}`}
+            _hover={{
+              bg: '#F4B66D',
+            }}
             _focus={{
-              bg: 'gray.200',
+              bg: '#F4B66D',
             }}
           >
             <Link href="https://www.instagram.com/monishim/" isExternal>
