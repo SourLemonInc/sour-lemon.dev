@@ -13,7 +13,7 @@ import {
   IconProps,
 } from '@chakra-ui/react';
 
-import { MAIN_BLUE_COLOR, MAIN_GREEN_COLOR } from '../constants/';
+import { MAIN_YELLOW_COLOR, MAIN_BLUE_COLOR, MAIN_GREEN_COLOR } from '../constants/';
 
 // ロゴ
 import Logo from '../components/logo';
@@ -66,15 +66,31 @@ export default function CallToActionWithIllustration() {
             rounded={'full'}
             px={6}
             colorScheme={'yellow'}
-            bg={'#E0EC55'}
-            _hover={{ bg: 'yellow.400' }}
+            color={'white'}
+            bg={'#171516'}
+            _hover={{
+              bg: `${MAIN_YELLOW_COLOR}`,
+              color: `black`
+            }}
           >
             <Link href="https://github.com/SourLemonInc" isExternal>
               Github
             </Link>
           </Button>
-          <Button rounded={'full'} px={6}>
-            Learn more
+          <Button
+            rounded={'full'}
+            px={6}
+            colorScheme={'yellow'}
+            color={'white'}
+            bg={'#171516'}
+            _hover={{
+              bg: `${MAIN_YELLOW_COLOR}`,
+              color: `black`
+            }}
+          >
+            <Link href="https://github.com/SourLemonInc" isExternal>
+              会社について
+            </Link>
           </Button>
         </Stack>
       </Stack>
