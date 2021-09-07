@@ -13,6 +13,8 @@ import {
   IconProps,
 } from '@chakra-ui/react';
 
+import { MAIN_BLUE_COLOR, MAIN_GREEN_COLOR } from '../constants/';
+
 // ロゴ
 import Logo from '../components/logo';
 
@@ -47,10 +49,10 @@ export default function CallToActionWithIllustration() {
           lineHeight={'110%'}
         >
           たすけあい、{' '}
-          <Text as={'span'} color={'#6B96D5'}>
+          <Text as={'span'} color={MAIN_BLUE_COLOR}>
             誰もがたのしく、
           </Text>
-          <Text as={'span'} color={'#85CE85'}>
+          <Text as={'span'} color={MAIN_GREEN_COLOR}>
             誰もが豊かに
           </Text>
         </Heading>
