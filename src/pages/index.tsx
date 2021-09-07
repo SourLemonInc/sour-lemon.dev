@@ -1,17 +1,10 @@
 import React from 'react';
 
-import {
-  Box,
-  chakra,
-  Center,
-  SimpleGrid,
-} from '@chakra-ui/react';
+import { Box, chakra, Center, SimpleGrid } from '@chakra-ui/react';
 
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import WithSubnavigation from '../components/withSubnavigation';
 import CallToActionWithIllustration from '../components/callToActionWithIllustration';
-import LargeWithNewsletter from '../components/largeWithNewsletter';
 import SocialProfileWithImageHisasann from '../components/socialProfileWithImageHisasann';
 import SocialProfileWithImageMonishim from '../components/socialProfileWithImageMonishim';
 import CompanyInfo from '../components/companyInfo';
@@ -56,10 +49,6 @@ const IndexPage = () => (
 
     <Center>
       <CompanyInfo />
-    </Center>
-
-    <Center>
-      <LargeWithNewsletter />
     </Center>
   </Layout>
 );

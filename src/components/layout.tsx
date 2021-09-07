@@ -8,10 +8,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import { LOGO_MAX_WIDTH } from '../constants/';
+
+import { Center } from '@chakra-ui/react';
 
 import Header from './header';
 import './layout.css';
+
+import LargeWithNewsletter from '../components/largeWithNewsletter';
 
 const Layout = ({ children }: { children: any }) => {
   const data = useStaticQuery(graphql`
@@ -26,17 +29,13 @@ const Layout = ({ children }: { children: any }) => {
 
   return (
     <>
-      {/*<Header siteTitle={data.site.siteMetadata.title} />*/}
-      <div
-        style={{
-          margin: '0 auto',
-          // maxWidth: LOGO_MAX_WIDTH,
-          // padding: '0 1.0875rem 1.45rem',
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{ textAlign: 'center' }}></footer>
-      </div>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <main>{children}</main>
+      <footer>
+        <Center>
+          <LargeWithNewsletter />
+        </Center>
+      </footer>
     </>
   );
 };
