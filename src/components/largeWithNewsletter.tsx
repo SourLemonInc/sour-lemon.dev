@@ -19,12 +19,18 @@ import { ReactNode } from 'react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 
+import { css } from '@emotion/react';
+
 // @ts-ignore
 import logoImage from '../images/logo/icon-256x256.png';
 
 const Logo = (props: any) => {
   return <Image src={logoImage} boxSize="40px" objectFit="cover" />;
 };
+
+const largeWithNewsletterWrapperStyle = css`
+  margin-top: 50px;
+`;
 
 const SocialButton = ({
   children,
@@ -69,9 +75,8 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 export default function LargeWithNewsletter() {
   return (
     <Box
-      // bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}
-      style={{ marginTop: '50px' }}
+      css={largeWithNewsletterWrapperStyle}
     >
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
