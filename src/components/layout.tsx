@@ -5,6 +5,8 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import 'fontsource-noto-sans-jp';
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';

@@ -13,6 +13,10 @@ const theme = {
   colors: {
     primary: 'rebeccapurple',
   },
+  fonts: {
+    // https://fonts.google.com/specimen/Noto+Sans+JP?subset=japanese
+    body: '"Noto Sans JP", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+  },
 };
 
 export default extendTheme(theme);
