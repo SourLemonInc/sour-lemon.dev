@@ -110,12 +110,7 @@ export default function LargeWithNewsletter() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
-            <Link
-              href={
-                'https://forms.gle/exFMWFtdb9msd84f7'
-              }
-              isExternal
-            >
+            <Link href={'https://forms.gle/exFMWFtdb9msd84f7'} isExternal>
               Contact us
             </Link>
           </Stack>
@@ -125,18 +120,20 @@ export default function LargeWithNewsletter() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Follow Us</ListHeader>
+            <Link href={'https://github.com/SourLemonInc'} isExternal>
+              Github
+            </Link>
+            <Link href={'https://twitter.com/sourlemoninc'} isExternal>
+              Twitter
+            </Link>
             <Link
-              href={'https://github.com/SourLemonInc'}
+              href={
+                'https://www.facebook.com/SourLemonInc/?ref=pages_you_manage'
+              }
               isExternal
-            >Github</Link>
-            <Link
-              href={'https://twitter.com/sourlemoninc'}
-              isExternal
-            >Twitter</Link>
-            <Link
-              href={'https://www.facebook.com/SourLemonInc/?ref=pages_you_manage'}
-              isExternal
-            >Facebook</Link>
+            >
+              Facebook
+            </Link>
           </Stack>
         </SimpleGrid>
       </Container>

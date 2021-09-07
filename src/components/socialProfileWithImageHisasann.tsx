@@ -13,7 +13,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
-import { INSTAGRAM_COLOR } from '../constants/'
+import { INSTAGRAM_COLOR } from '../constants/';
 
 // @ts-ignore
 import socialImage from '../images/social/hisasann/hisasann.jpg';

@@ -26,12 +26,17 @@ const Header = ({ siteTitle }: { siteTitle: string }) => {
 
   return (
     <header
-      style={{
-        // borderBottom: `1px solid ${MAIN_YELLOW_COLOR}`,
-      }}
+      style={
+        {
+          // borderBottom: `1px solid ${MAIN_YELLOW_COLOR}`,
+        }
+      }
     >
-      <Container as={Flex} maxW={'7xl'} align={'center'}
-        style={{height: '50px'}}
+      <Container
+        as={Flex}
+        maxW={'7xl'}
+        align={'center'}
+        style={{ height: '50px' }}
       >
         <Flex>
           <Link
