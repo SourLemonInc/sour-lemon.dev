@@ -1,19 +1,29 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import { Center, Flex, Image } from '@chakra-ui/react';
+
+import { Link } from 'gatsby';
+
+// @ts-ignore
+import logoImage from '../images/logo/icon-256x256.png';
+
+const Logo = () => {
+  return <Image src={logoImage} boxSize="40px" objectFit="cover" />;
+};
 
 const Header = ({ siteTitle }: { siteTitle: string }) => (
   <header
     style={{
-      background: '#E0EC55',
-      marginBottom: '1.45rem',
+      // background: '#E0EC55',
+      borderBottom: '1px solid #E0EC55',
     }}
   >
     <div
       style={{
         margin: '0 auto',
         maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        padding: '1.0rem 1.0rem',
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -24,7 +34,14 @@ const Header = ({ siteTitle }: { siteTitle: string }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          <Flex>
+            <Center w="40px">
+              <Logo />
+            </Center>
+            <Center w="160px">
+              {siteTitle}
+            </Center>
+          </Flex>
         </Link>
       </h1>
     </div>
